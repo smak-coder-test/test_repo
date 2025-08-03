@@ -1,0 +1,23 @@
+# Repository Information
+
+**Repository Path**: `/tmp/coder_bots/bot_31`
+
+**Current Branch**: `main`
+
+**Branch List**: `main`
+
+**Remote Enabled**: Yes
+
+**GitHub Enabled**: Yes
+
+**Remote URL**: [GitHub Repository](https://github.com/smak-coder-test/test_repo.git)
+
+**Last Commit**:  
+- **Hash**: `c7ca39c4bc5d6a2e835562a085a2ebbc2ac08666`  
+- **Message**: `Merge pull request #7 from smak-coder-test/cleanup-all-files`  
+- **Author**: `smak-coder-test`  
+- **Date**: `2025-08-03`  
+
+**Is Clean**: Yes
+
+**Uncommitted Changes**: None
