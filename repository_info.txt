@@ -1,2 +1,2 @@
-# This is a filtered repository info file
+# This is the repository info file
 
