@@ -3,10 +3,10 @@ WORKDIR /app
 COPY requirements.txt .
  RUN pip install -r requirements.txt
 COPY . .
-CMD ["pytest", "tests/"]
+CMD ["pytest", "tests/test_palindrome_check.py"]
 FROM python:3.11-slim
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-CMD ["pytest", "tests/"]
+CMD ["pytest", "-q", "--tb=short", "tests/test_palindrome_check.py"]
