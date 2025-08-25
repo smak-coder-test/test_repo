@@ -1,4 +1,5 @@
 import re
+import re
 def is_palindrome(string):
     import re
     string = string.lower().replace("\s+", "")  # Normalize string
