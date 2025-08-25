@@ -1,4 +1,6 @@
+import re
 import unittest
+import re
 from palindrome_check import is_palindrome
 
 class TestPalindromeCheck(unittest.TestCase):
