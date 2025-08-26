@@ -14,4 +14,4 @@ class TestPalindromeCheck(unittest.TestCase):
         self.assertFalse(is_palindrome("hello"))
         self.assertFalse(is_palindrome("world"))
 
-if __name__ == '__main__':
+    
