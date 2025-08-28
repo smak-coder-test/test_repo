@@ -14,6 +14,24 @@ import re
 from palindrome_check import is_palindrome
 
 class TestPalindromeCheck(unittest.TestCase):
+    def test_whitespace_handling(self):
+        self.assertTrue(is_palindrome("   A man a plan a canal Panama   "))  # Edge case: leading/trailing spaces
+
+    def test_special_characters(self):
+        self.assertTrue(is_palindrome("A! man a plan a canal: Panama!"))  # Edge case: special characters
+
+    def test_numeric_palindrome(self):
+        self.assertTrue(is_palindrome("12321"))
+
+    def test_long_string_palindrome(self):
+        long_palindrome = "a" * 10000 + "b" + "a" * 10000  # Edge case: very long string
+        self.assertFalse(is_palindrome(long_palindrome))
+
+    def test_invalid_inputs(self):
+        with self.assertRaises(TypeError):  # Edge case: non-string input.
+            is_palindrome(12345)
+        with self.assertRaises(TypeError):
+            is_palindrome(None)
 
     def test_palindrome(self):
         self.assertTrue(is_palindrome("A man a plan a canal Panama"))
