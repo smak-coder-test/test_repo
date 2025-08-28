@@ -1,6 +1,5 @@
 import re
 def is_palindrome(string):
     import re
-    string = string.lower().replace("\s+", "")  # Normalize string
-    string = re.sub(r'[\W_]+', '', string).lower()  # Normalize string
+    string = re.sub(r'[^a-zA-Z0-9]', '', string.lower())  # Normalize and remove non-alphanumeric characters
     return string == string[::-1]
