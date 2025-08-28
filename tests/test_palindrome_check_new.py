@@ -7,6 +7,11 @@ class TestPalindromeCheck(unittest.TestCase):
         self.assertTrue(is_palindrome('racecar'))
         self.assertTrue(is_palindrome('level'))
         self.assertFalse(is_palindrome('hello'))
+        # Edge cases
+        self.assertTrue(is_palindrome(''))  # empty string
+        self.assertTrue(is_palindrome('a'))  # single character
+        self.assertTrue(is_palindrome('A man, a plan, a canal: Panama'))  # phrase with punctuation
+        self.assertFalse(is_palindrome('not a palindrome'))  # non-palindromic phrase
         self.assertTrue(is_palindrome('racecar'))
         self.assertTrue(is_palindrome('level'))
         self.assertFalse(is_palindrome('hello'))
