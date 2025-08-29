@@ -1,16 +1,14 @@
 # Repository Overview
 
-This repository contains simple text utilities and accompanying unit tests.
+This repository contains a simple palindrome utility and accompanying unit tests.
 
 ## Structure
-- `text_utils.py` — text utility functions
 - `palindrome_check.py` — palindrome-related helpers
 - `tests/` — unit tests
-  - `test_edit_distance.py`
   - `test_palindrome_check_new.py`
-  - `test_text_utils.py`
 - `Dockerfile.test` — containerized test runner (Python 3.11)
 - `requirements.txt` — Python dependencies for tests
+- `repository_info.txt` — repository metadata/info
 
 ## Requirements
 - Python 3.11+
@@ -20,7 +18,7 @@ This repository contains simple text utilities and accompanying unit tests.
 ## Running Tests
 
 ### Option A: Locally
-1. Create and activate a virtual environment (recommended):
+1. (Recommended) Create and activate a virtual environment:
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
@@ -31,7 +29,7 @@ This repository contains simple text utilities and accompanying unit tests.
    ```
 3. Run the unit test suite (unittest):
    ```bash
-   python -m unittest discover -s tests
+   python3 -m unittest discover -s tests
    ```
 
 ### Option B: Docker
@@ -46,5 +44,5 @@ python3 -m unittest discover -s tests
 ```
 
 ## Notes
-- Test discovery uses the standard `unittest` pattern in the `tests/` directory.
-- If you are adding new tests, place them under `tests/` and ensure files are named `test_*.py`.
+- Tests are discovered from the `tests/` directory using the standard `unittest` discovery pattern (`test_*.py`).
+- When adding new tests, place them under `tests/` and name files `test_*.py`.
