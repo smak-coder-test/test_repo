@@ -1,9 +1,27 @@
+
+## Levenshtein Edit Distance
+
+The `edit_distance.py` module provides `levenshtein_distance(s1: str, s2: str) -> int`,
+which computes the minimum number of single-character edits (insertions, deletions,
+substitutions) to transform one string into another using a dynamic programming approach
+with O(min(m, n)) space.
+
+Example:
+```python
+from edit_distance import levenshtein_distance
+
+print(levenshtein_distance("kitten", "sitting"))  # 3
+print(levenshtein_distance("flaw", "lawn"))       # 2
+```
 # Repository Overview
 
-This repository contains a simple palindrome utility and accompanying unit tests.
+This repository contains:
+- A palindrome utility with unit tests
+- A Levenshtein edit distance utility with unit tests
 
 ## Structure
 - `palindrome_check.py` — palindrome-related helpers
+- `edit_distance.py` — Levenshtein edit distance implementation
 - `tests/` — unit tests
   - `test_palindrome_check_new.py`
 - `Dockerfile.test` — containerized test runner (Python 3.11)
