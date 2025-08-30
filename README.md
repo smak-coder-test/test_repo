@@ -13,6 +13,15 @@ from edit_distance import levenshtein_distance
 print(levenshtein_distance("kitten", "sitting"))  # 3
 print(levenshtein_distance("flaw", "lawn"))       # 2
 ```
+
+Anagram check example (ignores case, whitespace, and punctuation; keeps alphanumerics):
+```python
+from string_utils import is_anagram
+
+print(is_anagram("listen", "silent"))            # True
+print(is_anagram("Dormitory", "Dirty room!!"))    # True
+print(is_anagram("caf\u00e9", "face"))             # False (diacritic preserved)
+```
 # Repository Overview
 
 This repository contains:
