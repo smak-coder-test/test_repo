@@ -33,7 +33,10 @@ This repository contains:
 - `edit_distance.py` — Levenshtein edit distance implementation
  - `string_utils.py` — general-purpose string utilities (e.g., concatenation)
 - `tests/` — unit tests
+  - `test_concat_strings.py`
+  - `test_edit_distance.py`
   - `test_palindrome_check_new.py`
+  - `test_is_anagram.py`
 - `Dockerfile.test` — containerized test runner (Python 3.11)
 - `requirements.txt` — Python dependencies for tests
 - `repository_info.txt` — repository metadata/info
