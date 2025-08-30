@@ -22,6 +22,7 @@ This repository contains:
 ## Structure
 - `palindrome_check.py` — palindrome-related helpers
 - `edit_distance.py` — Levenshtein edit distance implementation
+ - `string_utils.py` — general-purpose string utilities (e.g., concatenation)
 - `tests/` — unit tests
   - `test_palindrome_check_new.py`
 - `Dockerfile.test` — containerized test runner (Python 3.11)
@@ -64,3 +65,16 @@ python3 -m unittest discover -s tests
 ## Notes
 - Tests are discovered from the `tests/` directory using the standard `unittest` discovery pattern (`test_*.py`).
 - When adding new tests, place them under `tests/` and name files `test_*.py`.
+
+## String Utilities
+
+The `string_utils.py` module provides common string helpers.
+
+Concatenation example:
+```python
+from string_utils import concat_strings
+
+print(concat_strings("Hello", "World"))     # HelloWorld
+print(concat_strings("你好", "世界"))          # 你好世界
+print(concat_strings("", "non-empty"))      # non-empty
+```
